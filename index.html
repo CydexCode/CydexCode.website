@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CydexCode Online Web Tutorials</title>
+    <link rel="icon" href="main images/icon.jpg">
+    <link rel="stylesheet" href="css/style.css"> 
+    <!--font awesom-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!--good font family barlow and poppins-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="#" class="menu-btn">
+            <div class="CydexCode-logo" >
+                <img src="main images/icon.jpg" alt="CydexCode Logo" class="circular-image">
+            </div>
+            </a>
+            <div href="#Tutorial" class="menu-btn" id="Tutorial-btn">
+                Tutorials
+                <i class="fa-solid fa-caret-down" ></i>
+            </div>
+            <div href="#references" class="menu-btn" id="references-btn">
+                References
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div href="#exercises" class="menu-btn" id="exercises-btn">
+                Exercises
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <a href="https://youtube.com/@cydexcode" class="menu-btn" id="video-btn">
+                Video 
+            </a>
+
+            <!--mobile view-->
+            <div class="menu-btn" id="menu-btn-mobile">
+                Menu
+                <i class="fa-solid fa-caret-down" class="menu-btn"></i>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            
+
+            <div class="toggle_Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+
+            <div class="toggleLightDark btn">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </div>
+
+            <a href="https://youtube.com/@cydexcode" class="btn btn-link" id="social-media">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@cydexcode" class="btn btn-link" id="social-media">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/cydexcode?mibextid=ZbWKwL" class="btn btn-link" id="social-media">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com/CydexCode" class="btn btn-link" id="social-media">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#login" class="btn btn-link bg-green" id="login-btn">
+                Log in
+            </a>
+
+        </div>
+    </header>
+
+    <!--mobile menu bar-->
+    <div class="mobile-menu-container" id="mobile-menu-nav">
+        <div class="mobile-menu-close-btn">
+            <button id="mobile-nav-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul>
+            <div href="#Tutorial" class="menu-btn-mobile_menu" id="tutorial_menuLink_mobile">
+                Tutorials
+                <i class="fa-solid fa-caret-down" ></i>
+                <div class="nested-navigation-container_content_Mobile mobile_menuActive_tutorial" id="Tutorial_menu_mobile">
+                    <h1>Tutorials</h1>
+                    <h2>HTML CSS</h2>
+            
+                        <a href="#">hii</a>
+                 
+
+                </div>
+            </div>
+            <div href="#references" class="menu-btn-mobile_menu" id="references_menuLink_mobile" >
+                References
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="nested-navigation-container_content_Mobile mobile_menuActive_tutorial" id="references_menu_mobile">
+                    <h1>Tutorials</h1>
+                    <h2>HTML CSS</h2>
+            
+                        <a href="#">hii</a>
+                 
+
+                </div>
+            </div>
+            <div href="#exercises" class="menu-btn-mobile_menu" id="exercises_menuLink_mobile">
+                Exercises
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="nested-navigation-container_content_Mobile mobile_menuActive_tutorial" id="exercises_menu_mobile">
+                    <h1>Tutorials</h1>
+                    <h2>HTML CSS</h2>
+            
+                        <a href="#">hii</a>
+                 
+
+            </div>
+            <div href="https://youtube.com/@cydexcode" class="menu-btn-mobile_menu" id="video-btn-align">
+                Video
+            </div>
+            
+
+        </ul>
+
+    </div>
+
+    <!--nested navigation bar-->
+
+    <div class="nested-navigation-container nested_navigation_hidden" id="nested-navigation-container_id">
+        <div class="nested-navigation_container_close-btn" id="nested-navigation-close-Btn">
+            <button>  <i class="fa-solid fa-xmark" class="menu-btn"></i></button>
+        </div>
+
+
+        <div class="nested-navigation-container_content" id="nested-navigation-container-contentID">
+
+           <!--render the menu of all here--> 
+            <!-- <h1>Tutorials</h1>
+            <div class="nested-navigation-container_Content_data">
+                <div class="nested-navigation_item">
+                    <h2>HTML and CSS</h2>
+                    <a href="">Learn HTML</a>
+                    <a href="">Learn CSS</a>
+                    <a href="">Learn RWD</a>
+                </div>
+                <div class="nested-navigation_item">
+                    <h2>JavaScript</h2>
+                    <a href="">Learn JS</a>
+                    <a href="">Learn JQuery</a>
+                    <a href="">Learn React</a>
+                </div>
+                <div class="nested-navigation_item">
+                    <h2>Server Side</h2>
+                    <a href="">Learn SQL</a>
+                    <a href="">Learn mySQL</a>
+                    <a href="">Learn PHP</a>
+                </div>
+                <div class="nested-navigation_item">
+                    <h2>Data Analytics</h2>
+                    <a href="">Learn AI</a>
+                    <a href="">Learn ML</a>
+                    <a href="">Learn DAta Science</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <!---->
+    <section class="section_Heading">
+        <div class="section_container">
+        <h1>Learn Code With Cydex</h1>
+        <p>Start your Coding journey here.</p>
+        <div class="section_Heading_search">
+            <input type="text" placeholder="Search Tutorial Here"/>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="">Not Sure Where To Begin?</a>
+    </div>
+    </section>
+
+    <div class="svgBug"></div>
+
+    <section class="section_html">
+        <div class="section_left">
+            <h1>HTML</h1>
+        <p href="" >The Language for building webpage</p>
+        <a href="" class="bg-green">Learn HTML</a>
+        <a href="" class="bg-green">Video Tutorial</a>
+        <a href="" class="bg-green">HTML References</a>
+        </div>
+        <div class="section_right">
+            <div class="editor_container">
+                <h1>HTML Example :</h1>
+                <div class="editor" id="htmlCode">
+                    hhfhfhf4hh
+                    knh
+                    linknjhjb
+                     
+                </div>
+                <a href="#" class="editor_btn">Try it Yourself</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_css">
+        <div class="section_left">
+            <h1>CSS</h1>
+        <p href="" >The Language for styling webpage</p>
+        <a href="" class="bg-green">Learn CSS</a>
+        <a href="" class="bg-green">Video Tutorial</a>
+        <a href="" class="bg-green">CSS References</a>
+        </div>
+        <div class="section_right">
+            <div class="editor_container">
+                <h1>CSS Example :</h1>
+                <div class="editor" id="cssCode">
+                    hhfhfhf4hh
+                    knh
+                    linknjhjb
+                     
+                </div>
+                <a href="#" class="editor_btn">Try it Yourself</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_javascript">
+        <div class="section_left">
+            <h1>JavaScript</h1>
+        <p href="" >The Language for styling webpage</p>
+        <a href="" class="bg-green">Learn JavaScript</a>
+        <a href="" class="bg-green">Video Tutorial</a>
+        <a href="" class="bg-green">JavaScript References</a>
+        </div>
+        <div class="section_right">
+            <div class="editor_container">
+                <h1>JavaScript Example :</h1>
+                <div class="editor" id="jsCode">
+                    hhfhfhf4hh
+                    knh
+                    linknjhjb
+                     
+                </div>
+                <a href="#" class="editor_btn">Try it Yourself</a>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------------->
+    <section class="courses_card_container">
+
+        <div class="courses_bigCard">
+            <div class="bg-green">
+                <h2>PHP</h2>
+                <p>A Web server programming language</p>
+                <a href="">
+                    <button class="bg-black btn">Learn PHP</button>
+                </a>
+            </div>
+            <div class="bg-green">
+                <h2>jQuery</h2>
+                <p>A JS library for developing web pages</p>
+                <a href="">
+                    <button class="bg-black btn">Learn jQuery</button>
+                </a>
+            </div>
+            <div class="bg-green">
+                <h2>Java</h2>
+                <p>A programming language</p>
+                <a href="">
+                    <button class="bg-black btn">Learn Java</button>
+                </a>
+            </div>
+            <div class="bg-green">
+                <h2>C++</h2>
+                <p>A programming language</p>
+                <a href="">
+                    <button class="bg-black btn">Learn C++</button>
+                </a>
+            </div>
+            <div class="bg-green">
+                <h2>BootStrap</h2>
+                <p>A CSS framework for designing better web pages</p>
+                <a href="">
+                    <button class="bg-black btn">Learn Bootstarp</button>
+                </a>
+            </div>
+            <div class="bg-green">
+                <h2>.NET</h2>
+                <p>A Web server programming language</p>
+                <a href="">
+                    <button class="bg-black btn"> Learn .NET</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="courses_middleCard">
+        <a href="" class="bg-yellow">
+            <h2>C</h2>
+        </a>
+        <a href="" class="bg-yellow">
+            <h2>C#</h2>
+        </a>
+        </div>
+
+        <div class="courses_smallCard">
+
+            <a href="" class="bg-greenLight">
+                <h2>C</h2>
+            </a>
+            <a href="" class="bg-greenLight">
+                <h2>C#</h2>
+            </a>
+            <a href="" class="bg-greenLight">
+                <h2>C</h2>
+            </a>
+            <a href="" class="bg-greenLight">
+                <h2>C#</h2>
+            </a>
+            <a href="" class="bg-greenLight">
+                <h2>C</h2>
+            </a>
+            <a href="" class="bg-greenLight">
+                <h2>C#</h2>
+                <a href="" class="bg-greenLight">
+                    <h2>C#</h2>
+        
+        </div>
+    </section>
+
+    <!-- exercise and Quiz
+    <div class="section_exercise">
+        <div class="section_exercise_container">
+            <h1>Exercises and Quizzes</h1>
+            <P>Test your skills</P>
+            <div class="section_exercise_quiz">
+            
+               
+                <a href="" class="bg-yellow">Quizzes</a>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="menu">
+                <a href="#">Quizzes</a>
+                <a href="#">Exercises</a>
+                <a href="#">Certificates</a>
+                <a href="#">Upgrade</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="forumandAbout">
+                <a href="">Forum</a>
+                <a href="">About</a>
+            </div>
+        </div>
+            <div class="socialMedia">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+           
+        
+
+         <div class="footer_description">
+            <p>CydexCode is optimized for learning and training. Examples might be simplified to improve reading and learning.<a href="#">Copyright 1999-2023 </a>  by Refsnes Data.All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
